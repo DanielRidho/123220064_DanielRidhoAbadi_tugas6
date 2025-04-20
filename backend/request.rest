@@ -1,0 +1,27 @@
+GET http://localhost:5000/notes
+
+###
+GET http://localhost:5000/notes/3
+
+###
+POST http://localhost:5000/notes
+Content-Type: application/json
+
+{
+    "nama": "Daniel",
+    "judul": "First Notes",
+    "isi": "Ini isi pertamaku"
+}
+
+###
+PATCH http://localhost:5000/notes/3
+Content-Type: application/json
+
+{
+    "nama": "Daniel Ridho Abadi",
+    "judul": "First Notes (Edited)",
+    "isi": "Ini isi pertamaku, mungkin"
+}
+
+###
+DELETE http://localhost:5000/notes/3
